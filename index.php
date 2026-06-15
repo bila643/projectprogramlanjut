@@ -1,0 +1,447 @@
+<?php
+include "koneksi.php";
+
+$berita = mysqli_query($conn,"
+SELECT *
+FROM berita
+ORDER BY id DESC
+LIMIT 3
+");
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<title>PDAM Kota Maju</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+body{
+    background:#f5f7fb;
+    font-family:'Poppins',sans-serif;
+}
+
+.hero{
+    background:linear-gradient(135deg,#0d6efd,#00b4d8);
+    color:white;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+}
+
+.navbar{
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.card{
+    border:none;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.footer{
+    background:#0d6efd;
+    color:white;
+    padding:25px;
+    text-align:center;
+    margin-top:70px;
+}
+```
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+
+<div class="container">
+
+<a class="navbar-brand" href="">
+💧 PDAM Kota Maju
+</a>
+
+<div>
+
+<a href="#tentang"
+class="btn btn-outline-light btn-sm">
+
+Tentang
+
+</a>
+
+<a href="#layanan"
+class="btn btn-outline-light btn-sm">
+
+Layanan
+
+</a>
+
+<a href="#berita"
+class="btn btn-outline-light btn-sm">
+
+Berita
+
+</a>
+
+<a href="#kontak"
+class="btn btn-outline-light btn-sm">
+
+Kontak
+
+</a>
+
+<a href="login.php"
+class="btn btn-light btn-sm">
+
+Login Sistem
+
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-md-6">
+
+<h1 class="display-2 fw-bold">
+
+💧 Sistem Informasi PDAM
+
+</h1>
+
+<p class="lead mt-4">
+
+Melayani kebutuhan air bersih masyarakat secara cepat, mudah dan transparan untuk seluruh pelanggan.
+
+</p>
+
+<a href="login.php"
+class="btn btn-light btn-lg mt-3 px-5">
+
+Masuk Sistem
+
+</a>
+
+</div>
+
+<div class="col-md-6 text-center">
+
+<img
+src="https://cdn-icons-png.flaticon.com/512/728/728093.png"
+width="350">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+```
+
+<!-- TENTANG -->
+
+<div class="container mt-5" id="tentang">
+
+<h2 class="text-center mb-4">
+Tentang PDAM
+</h2>
+
+<p class="text-center">
+
+PDAM merupakan perusahaan daerah yang menyediakan layanan air bersih
+untuk masyarakat dengan sistem yang modern dan terintegrasi.
+
+</p>
+
+<!-- STATISTIK -->
+
+<div class="row mt-5">
+
+<div class="col-md-4">
+
+<div class="card shadow text-center">
+
+<div class="card-body">
+
+<h1 class="text-primary">
+500+
+</h1>
+
+<h5>Pelanggan</h5>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow text-center">
+
+<div class="card-body">
+
+<h1 class="text-success">
+24 Jam
+</h1>
+
+<h5>Layanan</h5>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow text-center">
+
+<div class="card-body">
+
+<h1 class="text-danger">
+100%
+</h1>
+
+<h5>Air Bersih</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- LAYANAN -->
+
+<div class="container mt-5" id="layanan">
+
+<h2 class="text-center mb-4">
+Layanan Kami
+</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<div class="card-body text-center">
+
+<h1>
+💧
+</h1>
+
+<h5>Sambungan Baru</h5>
+
+<p>
+
+Pengajuan pemasangan air baru secara mudah dan cepat.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<div class="card-body text-center">
+
+<h1>
+📢
+</h1>
+
+<h5>Pengaduan</h5>
+
+<p>
+
+Pelaporan gangguan dan keluhan pelanggan secara online.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<div class="card-body text-center">
+
+<h1>
+🧾
+</h1>
+
+<h5>Informasi Tagihan</h5>
+
+<p>
+
+Monitoring pembayaran dan tagihan air pelanggan.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+```
+
+<!-- BERITA -->
+
+<div class="container mt-5" id="berita">
+
+<h2 class="text-center mb-4">
+Berita Terbaru
+</h2>
+
+<div class="row">
+
+<?php while($b=mysqli_fetch_assoc($berita)){ ?>
+
+<div class="col-md-4">
+
+<div class="card shadow mb-3">
+
+<?php if($b['gambar']){ ?>
+
+<img
+src="assets/berita/<?= $b['gambar']; ?>"
+height="200"
+style="object-fit:cover;">
+
+<?php } ?>
+
+<div class="card-body">
+
+<h5><?= $b['judul']; ?></h5>
+
+<p>
+
+<?= substr($b['isi'],0,100); ?>...
+
+</p>
+
+<small class="text-muted">
+
+<?= $b['tanggal_publish']; ?>
+
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+<?php } ?>
+
+</div>
+
+</div>
+
+
+<!-- KONTAK -->
+
+<div class="container mt-5" id="kontak">
+
+<h2 class="text-center mb-4">
+Kontak Kami
+</h2>
+
+<div class="card shadow">
+
+<div class="card-body text-center">
+
+<h5>📍 Alamat</h5>
+
+<p>
+Jl. Raya PDAM No.1
+</p>
+
+<h5>📞 Telepon</h5>
+
+<p>
+(021) 12345678
+</p>
+
+<h5>✉ Email</h5>
+
+<p>
+info@pdam.com
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<p class="mb-0">
+
+© 2025 Sistem Informasi PDAM Kota Maju
+
+</p>
+
+</div>
+
+</body>
+
+</html>
+```
