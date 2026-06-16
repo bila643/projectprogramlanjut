@@ -7,7 +7,8 @@ $conn = mysqli_connect(
     "sistem_pdam"
 );
 
-if(!$conn){
-    die("Koneksi gagal : ".mysqli_connect_error());
+if (!$conn) {
+    die("Koneksi gagal : " . mysqli_connect_error());
 }
+
 ?>
